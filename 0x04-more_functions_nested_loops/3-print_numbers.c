@@ -1,6 +1,9 @@
 #include "main.h"
 #include <stdio.h>
 
+void _putchar(char c) {
+    putchar(c);
+}
 
 /**
  * print_numbers - prints 0123456789\n
