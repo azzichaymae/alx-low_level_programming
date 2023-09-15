@@ -6,18 +6,18 @@
  */
 void print_number(int n)
 {
-  unsigned int k=n;
+  unsigned int k = n;
+
   if (n < 0) {
-    n*= -1;
-    k = n ;
-    
-        _putchar('-');    
-    }
-  k/=10;
+    n *= -1;
+    k = n;
+    _putchar('-');
+  }
 
-    if (k != 0)
-        print_number(k);
+  k /= 10;
 
-    _putchar((n % 10) + '0');
+  if (k != 0)
+    print_number(k);
+
+  _putchar((n % 10) + '0');
 }
-
