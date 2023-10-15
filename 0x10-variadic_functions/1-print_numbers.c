@@ -1,4 +1,15 @@
-        char *sep;
+#include "variadic_functions.h"
+#include <stdarg.h>
+#include <stdio.h>
+/**
+ * print_numbers - Entry Point
+ * @separator: comma space
+ * @n: elements to be printed
+ * Return: void
+ */
+void print_numbers(const char *separator, const unsigned int n, ...)
+{
+	char *sep;
 	unsigned int i;
 	va_list list;
 
